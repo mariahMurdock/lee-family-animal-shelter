@@ -1,0 +1,22 @@
+.heading {
+  text-align: center;
+}
+
+.about {
+  text-align: center;
+}
+
+.paragraph {
+  word-wrap: break-word;
+  width: 600px;
+  margin: auto;
+  padding: 10px;
+}
+
+img {
+  height: 400px;
+  width: 600px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
