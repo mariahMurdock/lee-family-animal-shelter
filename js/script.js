@@ -1,22 +1,3 @@
-function buildDynamicNav() {
-  const navbarSections = ['', 'About', 'Dogs', 'Cats', 'Exotic', 'Contact'];
-  const navbarHrefs = ['', '#about', '#dogs', '#cats', '#exotic', '#contact'];
-  const navBarUl = document.querySelector('#navbar__list');
-  for (let i = 0; i < 6; i++) {
-    const navLi = document.createElement('li');
-    navBarUl.appendChild(navLi);
-    const btn = document.createElement('button');
-    navLi.appendChild(btn);
-    btn.setAttribute('class', 'button');
-    const anchorElements = document.createElement('a');
-    btn.appendChild(anchorElements);
-    anchorElements.setAttribute('href', navbarHrefs[i]);
-    anchorElements.textContent = navbarSections[i];
-  }
-}
-console.log(buildDynamicNav());
-
-
 // When the user scrolls the page, execute myFunction
 window.onscroll = function() {
   myFunction()
