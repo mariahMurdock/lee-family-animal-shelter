@@ -1,10 +1,56 @@
+.main {
+  display: grid;
+  grid-template-columns: 200px auto;
+  grid-template-areas:
+    "nav nav heading heading"
+    "nav nav about about"
+    "nav nav dogs dogs"
+    "nav nav cats cats"
+    "nav nav exotic exotic"
+    "nav nav contact contact"
+}
+
+.navbar_menu {
+  grid-area: nav;
+}
+
+.heading {
+  grid-area: heading;
+}
+
+.about {
+  grid-area: about;
+}
+
+.dogs {
+  grid-area: dogs;
+}
+
+.cats {
+  grid-area: cats;
+}
+
+.exotic {
+  grid-area: exotic;
+}
+
+.contact {
+  grid-area: contact;
+}
+
 html {
   scroll-behavior: smooth;
   font-size: 20px;
 }
+#alex {
+  height: 170px;
+  width: 170px;
+  border: none;
+}
 
 .heading {
   text-align: center;
+  padding-right: 20%;
 }
 
 .about {
@@ -44,13 +90,14 @@ ul {
   top: 0;
   width: 100%;
 }
+
 .footer {
   padding: 600px;
 }
 
 button {
-  background-color:  beige;
-  border: 2px solid black;
+  /* background-color: beige; */
+  border: none;
   font-size: 18px;
   cursor: pointer;
 }
@@ -58,25 +105,31 @@ button {
 .active {
   background-color: #82b74b;
 }
+
+.about {
+  padding-right: 20%;
+}
 .dogs {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   padding: 50px;
   grid-gap: 10px;
+  padding-right: 20%;
 }
+
 .golden {
-  height: 400px;
-  width: 400px;
+  height: 300px;
+  width: 300px;
 }
 
 .pitbull {
-  height: 400px;
-  width: 400px;
+  height: 300px;
+  width: 300px;
 }
 
 .puffball {
-  height: 400px;
-  width: 400px;
+  height: 300px;
+  width: 300px;
 }
 
 .cats {
@@ -84,22 +137,22 @@ button {
   justify-content: space-between;
   padding: 50px;
   grid-gap: 10px;
+  padding-right: 20%;
 }
 
-
 .fluffy {
-  height: 400px;
-  width: 400px;
+  height: 300px;
+  width: 300px;
 }
 
 .naked {
-  height: 400px;
-  width: 400px;
+  height: 300px;
+  width: 300px;
 }
 
 .claws {
-  height: 400px;
-  width: 400px;
+  height: 300px;
+  width: 300px;
 }
 
 .exotic {
@@ -107,21 +160,22 @@ button {
   justify-content: space-between;
   padding: 50px;
   grid-gap: 10px;
+  padding-right: 20%;
 }
 
 .parrot {
-  height: 400px;
-  width: 400px;
+  height: 300px;
+  width: 300px;
 }
 
 .linx {
-  height: 400px;
-  width: 400px;
+  height: 300px;
+  width: 300px;
 }
 
 .snake {
-  height: 400px;
-  width: 400px;
+  height: 300px;
+  width: 300px;
 }
 
 .contact {
